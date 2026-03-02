@@ -1,4 +1,4 @@
-const symbols = ["😍", "😎", "😅", "😏", "😁"];
+const symbols = ["🍏", "🥭", "🍇", "🍐", "🍓", "🍋"];
 let balance = parseInt(localStorage.getItem("userBalance")) || 0;
 
 const btn = document.getElementById("spin-btn");
@@ -74,3 +74,4 @@ function updateUI() {
   balanceText.innerText = balance;
   localStorage.setItem("userBalance", balance);
 }
+
