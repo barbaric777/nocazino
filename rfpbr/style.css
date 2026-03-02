@@ -1,0 +1,91 @@
+body {
+  background: #69b4ff;
+  font-family: sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  color: rgb(255, 255, 255);
+}
+.game-container {
+  text-align: center;
+  background: #3627bd;
+  padding: 200px;
+  border-radius: 10px;
+  border: 5px solid #f10f0f;
+}
+.balance-board {
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.slot-machine {
+  display: flex;
+  gap: 10px;
+  background: #34495e;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.reel {
+  width: 80px;
+  height: 80px;
+  background: rgb(245, 242, 242);
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 40px;
+  transition: transform 0.5s ease-in-out;
+}
+
+button {
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+  background: #15b357;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  transition: 0.2s;
+}
+button:active {
+  transform: scale(0.95);
+}
+button:disabled {
+  background: #5d7274;
+}
+#message {
+  margin-top: 15px;
+  height: 20px;
+  font-weight: bold;
+  color: #0ff11a;
+}
+button:hover {
+  opacity: 80%;
+}
+.reel {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #fff;
+  overflow: hidden; /* Скрываем лишние символы */
+  display: inline-block;
+  background: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.symbol-container {
+  display: flex;
+  flex-direction: column;
+  transition: transform 2s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавная остановка */
+}
+
+.symbol {
+  height: 80px;
+  font-size: 50px;
+  line-height: 80px;
+}
