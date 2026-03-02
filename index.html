@@ -80,18 +80,18 @@
       const balanceDisplay = document.getElementById("profile-balance");
       const depositInput = document.getElementById("deposit-amount");
 
-      // Функция для получения текущего баланса из памяти
+
       function getSavedBalance() {
         const saved = localStorage.getItem("userBalance");
-        return saved ? parseInt(saved) : 0; // Если пусто, возвращаем 0
+        return saved ? parseInt(saved) : 0; 
       }
 
-      // Функция обновления текста на экране
+
       function updateDisplay() {
         balanceDisplay.innerText = getSavedBalance();
       }
 
-      // Функция пополнения
+
       function deposit() {
         const amount = parseInt(depositInput.value);
 
@@ -103,11 +103,11 @@
         const newBalance = getSavedBalance() + amount;
         localStorage.setItem("userBalance", newBalance);
 
-        updateDisplay(); // Обновляем цифру на странице
-        depositInput.value = ""; // Очищаем поле ввода
+        updateDisplay(); 
+        depositInput.value = ""; 
       }
 
-      // Функция сброса
+      
       function resetBalance() {
         if (confirm("Вы уверены, что хотите обнулить баланс?")) {
           localStorage.setItem("userBalance", 0);
@@ -115,9 +115,10 @@
         }
       }
 
-      // Запускаем отображение при загрузке страницы
+
       updateDisplay();
     </script>
   </body>
 </html>
+
 
