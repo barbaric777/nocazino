@@ -71,7 +71,7 @@ button:hover {
   width: 80px;
   height: 80px;
   border: 2px solid #fff;
-  overflow: hidden; /* Скрываем лишние символы */
+  overflow: hidden; 
   display: inline-block;
   background: white;
   border-radius: 10px;
@@ -81,7 +81,7 @@ button:hover {
 .symbol-container {
   display: flex;
   flex-direction: column;
-  transition: transform 2s cubic-bezier(0.25, 0.1, 0.25, 1); /* Плавная остановка */
+  transition: transform 2s cubic-bezier(0.25, 0.1, 0.25, 1); 
 }
 
 .symbol {
@@ -89,3 +89,4 @@ button:hover {
   font-size: 50px;
   line-height: 80px;
 }
+
